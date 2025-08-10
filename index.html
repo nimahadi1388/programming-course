@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'>
+    <link href='https://cdn.boxicons.com/fonts/basic/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>programming</title>
+</head>
+
+<body>
+
+    <header id="menu">
+        <i id="clickM" class='bxr  bx-menu'  style='color:#000; font-size:3.5rem;'></i> 
+        <div id="menuM" class="menu container">
+            <div class="logo">
+                <h2><a href="#">پرو<span>اینفو</span></a></h2>
+            </div>
+            <div class="menu_o">
+                <ul>
+                    <a href="#Home">
+                        <li>خانه</li>
+                    </a>
+                    <a href="#About">
+                        <li>درباره ما</li>
+                    </a>
+                    <a href="#Course">
+                        <li>اموزش ها</li>
+                    </a>
+                    <a href="#Coment">
+                        <li>کامنت ها</li>
+                    </a>
+                    <a href="#Teachers">
+                        <li>معلم ها</li>
+                    </a>
+                    <a href="#Subjects">
+                        <li>موضوعات</li>
+                    </a>
+                </ul>
+            </div>
+            <div class="menu_t">
+                <h2 id="user"></h2>
+                <a href="#"><i class='bx  bx-user-circle'></i></a>
+                <a href="#"><i class='bx  bx-bookmark'></i> </a>
+                <i class='bxr  bx-cart'></i>
+                <span>0</span>
+                <a href="#"><i class='bx  bx-heart'></i> </a>
+            </div>
+        </div>
+    </header>
+    <section class="background-main" id="Home">
+        <div class="background">
+        </div>
+        <div class="text-bg">
+            <h2>پرو اینفو</h2>
+            <p>بهترین و کامل ترین سایت اموزش برنامه نویسی</p>
+            <a href="#" onclick="add()">ورود</a>
+            <a href="#" onclick="add()">ثبت نام</a>
+        </div>
+    </section>
+    <div class="background-m">
+        <div class="modal">
+            <i class='bxr  bx-x' style='color:#000000'></i>
+            <div class="text-log">
+                <h2 id="messageSu">ورود/ثبت نام</h2>
+                <input type="text" id="userName" placeholder="نام کاربری خود را وارد کنید...">
+                <input type="email" id="Em" placeholder="ایمیل خود را وارد کنید...">
+                <div class="pass flex-AI">
+                    <input id="passWord" type="text" placeholder="رمز امنیتی را وارد کنید...">
+                    <p id="pasW"></p>
+                    <a href="#" id="aftAccept" onclick="pasW()">دریافت رمز</a>
+                    <button id="ace" class="accept">تایید</button>
+                </div>
+                <button type="submit" id="formS">ثبت نام</button>
+            </div>
+        </div>
+    </div>
+    <section class="boxes container" id="Course">
+        <h2 class="title">دوره های پرکاربرد:</h2>
+        <div class="box">
+            <div class="img-box">
+                <img src="./assets/image/box-1-1.png" alt="">
+            </div>
+            <div class="text-box">
+                <h2>اموزش پایتون به زبان ساده</h2>
+                <p>پایتون (Python) یکی از محبوب‌ترین زبان‌های برنامه‌نویسی در جهان است و اکثر افرادی که می‌خواهند اولین
+                    قدم‌ها را در مسیر برنامه‌نویسی بردارند، پایتون را انتخاب می‌کنند؛ چراکه پایتون به زبان انگلیسی بسیار
+                    نزدیک است و بخش عمده‌ای از ترس و دودلی مبتدیان را در همان مراحل اولیه، برطرف می‌کند؛ به‌طوری که
+                    یادگیری زبان‌ برنامه‌نویسی برایشان شدنی به‌نظر می‌رسد.</p>
+                <h2>3,500,000 تومان</h2>
+                <a href="#" class="button-course">مشاهده دوره</a>
+                <a href="#" class="button-s-course">شروع دوره</a>
+                <div class="i-shoppingy">
+                    <button onclick="addCart()" id="cart"><i class='bxr  bx-cart-plus'
+                            style='color:#000000'></i></button>
+                    <i class='bxr  bx-bookmark-plus-alt' style='color:#000000'></i>
+                    <i class='bxr  bx-heart-plus' style='color:#000000'></i>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="text-box">
+                <h2>اموزش جاوا به زبان ساده</h2>
+                <p>جاوا (به انگلیسی: Java ) یک زبان برنامه‌نویسیِ شیءگرا است که نخستین بار توسط جیمز گاسلینگ در شرکت
+                    سان‌مایکروسیستمز ایجاد گردید و در سال ۱۹۹۱ به عنوان بخشی از سکوی جاوا منتشر شد. زبان جاوا شبیه به
+                    سی‌پلاس‌پلاس است؛ اما مدل شیءگرایی آسان‌تری دارد و از قابلیت‌های سطح پایین کمتری پشتیبانی می‌کند.
+                </p>
+                <h2>4,000,000 تومان</h2>
+                <a href="#" class="button-course">مشاهده دوره</a>
+                <a href="#" class="button-s-course">شروع دوره</a>
+                <div class="i-shoppingy">
+                    <button onclick="addCart()" id="cart"><i class='bxr  bx-cart-plus'
+                            style='color:#000000'></i></button>
+                    <i class='bxr  bx-bookmark-plus-alt' style='color:#000000'></i>
+                    <i class='bxr  bx-heart-plus' style='color:#000000'></i>
+                </div>
+            </div>
+            <div class="img-box">
+                <img src="./assets/image/box-1-2.png" alt="">
+            </div>
+        </div>
+        <div class="box">
+            <div class="img-box">
+                <img src="./assets/image/box-1-3.png" alt="">
+            </div>
+            <div class="text-box">
+                <h2>اموزش طراحی سایت(پروژه محور)</h2>
+                <p>رای طراحی ظاهر هر صفحه وب باید از html و css استفاده کنیم که یه ظاهر و چارچوب زیبا داشته باشیم در این
+                    پست به سرا آموزش برنامه نویسی وب رفته ایم و کتابی رو آماده کردیم که به صورت خلاصه به آموزش کد نویسی
+                    html و css می پردازد . این کتاب در قالب 30 صفحه نگارش شده است . در ادامه هم توضیحاتی در مورد زبان
+                    html و کد نویسی css ارائه میدهیم که دوستان عزیز کامل با این دو زبان کدنویسی وب آشنا شوند</p>
+                <h2>3,500,00 تومان</h2>
+                <a href="#" class="button-course">مشاهده دوره</a>
+                <a href="#" class="button-s-course">شروع دوره</a>
+                <div class="i-shoppingy">
+                    <button onclick="addCart()" id="cart"><i class='bxr  bx-cart-plus'
+                            style='color:#000000'></i></button>
+                    <i class='bxr  bx-bookmark-plus-alt' style='color:#000000'></i>
+                    <i class='bxr  bx-heart-plus' style='color:#000000'></i>
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="text-box">
+                <h2>اموزش جاوااسکریپت به زبان ساده</h2>
+                <p>جاوااسکریپت (به انگلیسی: JavaScript) با کوته‌نوشت JS، نوعی زبان برنامه‌نویسی است
+                    که با ویژگی‌های ارائه شده در مشخصات اِکما اسکریپت مطابق است. جاوااسکریپت نوعی زبان سطح بالا،
+                    کامپایل درجا و چندالگویی است. جاوااسکریپت نحو آکولادی دارد، نوع‌دهی آن پویا است، نوع شیءگرا‌ی‌اش بر
+                    پایه پیش‌نمونه است و دارای توابع کلاس اول است.</p>
+                <h2>3,500,00 تومان</h2>
+                <a href="#" class="button-course">مشاهده دوره</a>
+                <a href="#" class="button-s-course">شروع دوره</a>
+                <div class="i-shoppingy">
+                    <button onclick="addCart()" id="cart"><i class='bxr  bx-cart-plus'
+                            style='color:#000000'></i></button>
+                    <i class='bxr  bx-bookmark-plus-alt' style='color:#000000'></i>
+                    <i class='bxr  bx-heart-plus' style='color:#000000'></i>
+                </div>
+            </div>
+            <div class="img-box">
+                <img src="./assets/image/box-1-4.png" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="back-sidebar" id="Coment">
+        <h2 class="custom-h2 pos-h2-custom">نظرات</h2>
+        <div class="background-sidebar container-fluide1">
+        </div>
+        <div class="parent-box container">
+            <div class="teacher-1 box">
+                <div class="img-box custom-img">
+                    <img src="./assets/image/teacher-one.png">
+                </div>
+                <div class="text-box">
+                    <h2>نظر دانشجو دوره</h2>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
+                        مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+                </div>
+            </div>
+            <div class="teacher-2 box">
+                <div class="img-box custom-img">
+                    <img src="./assets/image/teacher-two.png">
+                </div>
+                <div class="text-box">
+                    <h2>نظر دانشجو دوره</h2>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
+                        مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+                </div>
+            </div>
+            <div class="teacher-3 box">
+                <div class="img-box custom-img">
+                    <img src="./assets/image/teacher-three.webp">
+                </div>
+                <div class="text-box">
+                    <h2>نظر دانشجو دوره</h2>
+                    <p>لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است
+                        چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی تکنولوژی
+                        مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="info justify-around">
+        <div class="box">
+            <img src="./assets/image/support.png" alt="">
+            <p>پشتیبانی قوی 24/7</p>
+        </div>
+        <div class="box">
+            <img src="./assets/image/status.png" alt="">
+            <p>مدرک معتبر</p>
+        </div>
+        <div class="box">
+            <img src="./assets/image/safe.png" alt="">
+            <p>پرداخت امن</p>
+        </div>
+        <div class="box">
+            <img src="./assets/image/price.png" alt="">
+            <p>قیمت مناسب</p>
+        </div>
+    </section>
+    <section class="subjects container" id="Subjects">
+        <h2>موضوعات یادگیری:</h2>
+        <div class="grid">
+            <div class="box">
+                <img src="./assets/image/subject-1-computer.png" alt="">
+                <p>کامپیوتر</p>
+            </div>
+            <div class="box">
+                <img src="./assets/image/subject-2-programming.png" alt="">
+                <p>برنامه نویسی</p>
+            </div>
+            <div class="box">
+                <img src="./assets/image/subject-3-graphic.png" alt="">
+                <p>گرافیک</p>
+            </div>
+            <div class="box">
+                <img src="./assets/image/subject-4-gameMaker.png" alt="">
+                <p>بازی سازی</p>
+            </div>
+            <div class="box">
+                <img src="./assets/image/subject-5-web.png" alt="">
+                <p>طراحی سایت</p>
+            </div>
+            <div class="box">
+                <img src="./assets/image/subject-6-linux.png" alt="">
+                <p>لینوکس</p>
+            </div>
+            <div class="box">
+                <img src="./assets/image/subject-7-hacking.png" alt="">
+                <p>هک و امنیت</p>
+            </div>
+            <div class="box">
+                <img src="./assets/image/subject-8-wordpress.png" alt="">
+                <p>وردپرس</p>
+            </div>
+            <div class="box">
+                <img src="./assets/image/subject-9-linkdin.png" alt="">
+                <p>لینکدین</p>
+            </div>
+            <div class="box">
+                <img src="./assets/image/subject-10-github.png" alt="">
+                <p>اموزش کار با گیت هاب</p>
+            </div>
+            <div class="box">
+                <img src="./assets/image/subject-11-seo.png" alt="">
+                <p>اموزش سئو</p>
+            </div>
+            <div class="box">
+                <img src="./assets/image/subject-12-android.png" alt="">
+                <p>برنامه نویسی اندروید</p>
+            </div>
+            <div class="box">
+                <img src="./assets/image/subject-13-os.png" alt="">
+                <p>سیستم عامل</p>
+            </div>
+            <div class="box">
+                <img src="./assets/image/subject-14-bot.png" alt="">
+                <p>اموزش ساخت ربات تلگرام</p>
+            </div>
+        </div>
+    </section>
+    <section class="teachers container flex" id="Teachers">
+        <div class="button-teh flex-wrap-c" id="teach-button">
+            <h2>معلم های دوره ها:</h2>
+            <button href="#" onclick="show(0)"><img src="./assets/image/teach-1.png" class="active"
+                    alt="tech-1"></button>
+            <button onclick="show(1)"><img src="./assets/image/teach-2.png" alt="tech-2"></button>
+            <button onclick="show(2)"><img src="./assets/image/teach-3.png" alt="tech-3"></button>
+            <button onclick="show(3)"><img src="./assets/image/teach-4.png" alt="tech-4"></button>
+        </div>
+        <div class="justify-around">
+            <div class="box box-tech show">
+                <div class="img-teach">
+                    <img src="./assets/image/teach-1.png" alt="">
+                </div>
+                <div class="text-teach">
+                    <h2>احمد اکبریان</h2>
+                    <p><b>سن:</b>47 سال</p>
+                    <p><b>مهارت در:</b> پایتون والگوریتم‌های پیشرفته و ساختمان داده‌ها</p>
+                    <p><b>مدارک:</b> مدرک دکترا از دانشگاه تهران علوم کامپیوتر</p>
+                    <p><b>سابقه کار:</b>بیش از 10 سال سابقه کار</p>
+                    <a href="#">مراجعه به دوره ها</a>
+                </div>
+            </div>
+            <div class="box box-tech">
+                <div class="img-teach">
+                    <img src="./assets/image/teach-2.png" alt="">
+                </div>
+                <div class="text-teach">
+                    <h2>حامد احمدی</h2>
+                    <p><b>سن:</b>30 سال</p>
+                    <p><b>مهارت در:</b> طراحی وب سایت و متخصص ماشین لرنینگ</p>
+                    <p><b>مدارک:</b> فوق لیسانس دانشگاه امیرکبیر</p>
+                    <p><b>سابقه کار:</b>بیش از 5 سال سابقه کار</p>
+                    <a href="#">مراجعه به دوره ها</a>
+                </div>
+            </div>
+            <div class="box box-tech">
+                <div class="img-teach">
+                    <img src="./assets/image/teach-3.png" alt="">
+                </div>
+                <div class="text-teach">
+                    <h2>حسین علویان فر</h2>
+                    <p><b>سن:</b>37 سال</p>
+                    <p><b>مهارت در:</b> متخصص بازی سازی و زبان برنامه نویسی جاوا</p>
+                    <p><b>مدارک:</b> لیسانس دانشگاه شمسی پور</p>
+                    <p><b>سابقه کار:</b>بیش از 11 سال سابقه کار در شرکت های بین مللی امریکا</p>
+                    <a href="#">مراجعه به دوره ها</a>
+                </div>
+            </div>
+            <div class="box box-tech">
+                <div class="img-teach">
+                    <img src="./assets/image/teach-4.png" alt="">
+                </div>
+                <div class="text-teach">
+                    <h2>ارمان میرعطایی</h2>
+                    <p><b>سن:</b>41 سال</p>
+                    <p><b>مهارت در:</b> طراح وب و متحصص اندروید</p>
+                    <p><b>مدارک:</b> مدرک دکترا از دانشگاه تهران علوم کامپیوتر</p>
+                    <p><b>سابقه کار:</b>بیش از 14 سال سابقه کار</p>
+                    <a href="#">مراجعه به دوره ها</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="aboutU justify-around" id="About">
+        <div class="text-about">
+            <h2>درباره ما</h2>
+            <p>ما یک تیم برای اموزش به شما هستیم با مبلغی بسیار پایین</p>
+            <p><b>تماس با ما:</b>4411245-021</p>
+            <p>از اموزش ها مطلع شوید:</p>
+            <button onclick="sendE()" class="styButton">ارسال</button>
+            <input id="Em" type="email" class="input" placeholder="ایمیل خود را وارد کنید.." />
+        </div>
+        <div class="background-about">
+            <img src="./assets/image/background-About.png" alt="">
+        </div>
+    </section>
+    <footer>
+        <div class="justify-no-c titles">
+            <div class="box">
+                <h2>شعبه های ما</h2>
+                <a href="#">
+                    <p>تهران</p>
+                </a>
+                <a href="#">
+                    <p>اصفهان</p>
+                </a>
+                <a href="#">
+                    <p>مشهد</p>
+                </a>
+                <a href="#">
+                    <p>تبریز</p>
+                </a>
+                <a href="#">
+                    <p>سنندج</p>
+                </a>
+                <a href="#">
+                    <p>کرج</p>
+                </a>
+            </div>
+            <div class="box">
+                <h2>اموزش ها</h2>
+                <a href="#">
+                    <p>گرافیک</p>
+                </a>
+                <a href="#">
+                    <p>برنامه نویسی</p>
+                </a>
+                <a href="#">
+                    <p>وردپرس</p>
+                </a>
+                <a href="#">
+                    <p>گیت هاب</p>
+                </a>
+                <a href="#">
+                    <p>ICDL</p>
+                </a>
+                <a href="#">
+                    <p>هک و امنیت</p>
+                </a>
+            </div>
+            <div class="box">
+                <textarea id="comment" placeholder="نظر خود را بنویسید..." rows="10"></textarea>
+                <br>
+                <button class="styButton" onclick="sendC()">ارسال</button>
+                <div class="justify-around social">
+                    <a href="https://github.com/nimahadi1388"><img src="./assets/image/footer-1.png" alt=""></a>
+                    <a href="https://instagram.com/nimaprogramer1388"> <img src="./assets/image/footer-2.png"
+                            alt=""></a>
+                    <a href="https://www.linkedin.com/in/nima-hadizadeh-30aba529b/"><img
+                            src="./assets/image/footer-3.png" alt=""></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
